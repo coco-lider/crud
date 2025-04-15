@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini E-Commerce CRUD + Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="admin-panel">
+    <h2>➕ Mahsulot qo'shish</h2>
+    <form id="product-form">
+      <input type="text" id="name" placeholder="Mahsulot nomi" required>
+      <input type="number" id="price" placeholder="Narxi" required>
+      <input type="number" id="quantity" placeholder="Miqdori" required>
+      <input type="text" id="image" placeholder="Rasm URLsi (ixtiyoriy)">
+      <button type="submit">Qo'shish</button>
+    </form>
+  </section>
+
+
+  <section class="product-list" id="product-list"></section>
+
+  <section class="cart-panel">
+    <h2>🛒 Savatcha</h2>
+    <ul id="cart-list"></ul>
+    <p id="total">Umumiy: $0</p>
+    <button onclick="clearCart()">🧹 Savatchani tozalash</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
